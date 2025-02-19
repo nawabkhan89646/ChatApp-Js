@@ -9,6 +9,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <style>
+      .bg-custom-1 {
+        background-image: url('https://via.placeholder.com/800x600/FF5733/FFFFFF?text=Background+1');
+      }
+      .bg-custom-2 {
+        background-image: url('https://via.placeholder.com/800x600/33FF57/FFFFFF?text=Background+2');
+      }
+      .bg-custom-3 {
+        background-image: url('https://via.placeholder.com/800x600/3357FF/FFFFFF?text=Background+3');
+      }
+    </style>
   </head>
   <body class="bg-gray-100">
     <div class="flex flex-col md:flex-row h-screen">
@@ -116,6 +127,7 @@
         </div>
       </div>
 
+
       <div class="w-full md:w-2/3 bg-white">
         <div
           class="flex items-center justify-between p-4 border-b border-gray-200 bg-teal-600 text-white"
@@ -206,10 +218,71 @@
     </div>
 
     <script>
+      
       document
         .querySelector(".menu-button")
         .addEventListener("click", function () {
           document.querySelector(".dropdown-menu").classList.toggle("hidden");
+        });
+
+
+      const themes = [
+        { name: "Default", color: "bg-teal-600" },
+        { name: "Blue", color: "bg-blue-600" },
+        { name: "Red", color: "bg-red-600" },
+        { name: "Purple", color: "bg-purple-600" },
+      ];
+
+      let currentThemeIndex = 0;
+
+      document
+        .getElementById("change-theme")
+        .addEventListener("click", function () {
+          const sidebar = document.querySelector(".bg-teal-600");
+          const chatHeader = document.querySelector(".bg-teal-600.text-white");
+
+        
+          currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+          const newTheme = themes[currentThemeIndex];
+
+          
+          sidebar.classList.remove(
+            "bg-teal-600",
+            "bg-blue-600",
+            "bg-red-600",
+            "bg-purple-600"
+          );
+          chatHeader.classList.remove(
+            "bg-teal-600",
+            "bg-blue-600",
+            "bg-red-600",
+            "bg-purple-600"
+          );
+
+          
+          sidebar.classList.add(newTheme.color);
+          chatHeader.classList.add(newTheme.color);
+        });
+
+      
+      const backgrounds = ["bg-custom-1", "bg-custom-2", "bg-custom-3"];
+      let currentBackgroundIndex = 0;
+
+      document
+        .getElementById("change-background")
+        .addEventListener("click", function () {
+          const body = document.body;
+
+          
+          currentBackgroundIndex =
+            (currentBackgroundIndex + 1) % backgrounds.length;
+          const newBackground = backgrounds[currentBackgroundIndex];
+
+          
+          body.classList.remove("bg-custom-1", "bg-custom-2", "bg-custom-3");
+
+          
+          body.classList.add(newBackground);
         });
     </script>
   </body>
