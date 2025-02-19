@@ -1,198 +1,216 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Chat Application
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
- </head>
- <body class="bg-gray-100">
-  <div class="flex h-screen">
-   <div class="w-1/3 bg-teal-600 text-white">
-    <div class="p-4 border-b border-teal-500">
-     <h1 class="text-2xl font-bold">
-      CHAT SESSION
-     </h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex flex-col md:flex-row h-screen">
+      <div class="w-full md:w-1/3 bg-teal-600 text-white">
+        <div class="p-4 border-b border-teal-500">
+          <h1 class="text-2xl font-bold">CHAT SESSION</h1>
+        </div>
+        <div class="p-4 overflow-y-auto">
+          <div class="flex items-center mb-4">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/XCtwfQ1j71X9d_dIr95ONSkJxFQkKZJfjSmFeibqogM.jpg"
+              alt="Profile picture of John Mayers"
+              class="w-12 h-12 rounded-full mr-4"
+            />
+            <div>
+              <h2 class="font-bold">John Mayers</h2>
+              <p class="text-sm">Lorem, ipsum dolor sit amet consectetur...</p>
+              <p class="text-xs text-gray-300">3 min ago</p>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <img alt="Profile picture of Tony Stark" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/Ev3wWnColR8MPqA-Kjp3pbMMTbArVaBsVZBARfVHN1Y.jpg" width="50"/>
+            <div>
+             <h2 class="font-bold">
+              Tony Stark
+             </h2>
+             <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur...
+             </p>
+             <p class="text-xs text-gray-300">
+              10 min ago
+             </p>
+            </div>
+           </div>
+           <div class="flex items-center mb-4">
+            <img alt="Profile picture of S. Johansson" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/UojDg8VIvp57nNW1ds2we_UlHIXTi8fDddSkhU8RM0E.jpg" width="50"/>
+            <div>
+             <h2 class="font-bold">
+              S. Johansson
+             </h2>
+             <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur...
+             </p>
+             <p class="text-xs text-gray-300">
+              3 hours ago
+             </p>
+            </div>
+           </div>
+           <div class="flex items-center mb-4">
+            <img alt="Profile picture of Jeremy Renner" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/RC5x9gNMZJdH2YOgVt-EStzHPOtvf-qPOBM1-hGPqvU.jpg" width="50"/>
+            <div>
+             <h2 class="font-bold">
+              Jeremy Renner
+             </h2>
+             <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur...
+             </p>
+             <p class="text-xs text-gray-300">
+              4 hours ago
+             </p>
+            </div>
+           </div>
+           <div class="flex items-center mb-4">
+            <img alt="Profile picture of Anthony Mackie" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/WTr0mvk7on75LQouc26NgDByeG6mKyKk3SKfTWjpD7U.jpg" width="50"/>
+            <div>
+             <h2 class="font-bold">
+              Anthony Mackie
+             </h2>
+             <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur...
+             </p>
+             <p class="text-xs text-gray-300">
+              8 hours ago
+             </p>
+            </div>
+           </div>
+           <div class="flex items-center mb-4">
+            <img alt="Profile picture of Chris Evans" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/m_w9-v6p-Ltim2jL5LlQMj0X6uV3r4S_0keEdgDmE7o.jpg" width="50"/>
+            <div>
+             <h2 class="font-bold">
+              Chris Evans
+             </h2>
+             <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur...
+             </p>
+             <p class="text-xs text-gray-300">
+              22 hours ago
+             </p>
+            </div>
+           </div>
+           <div class="flex items-center mb-4">
+            <img alt="Profile picture of Chris Hemsworth" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/VlMoWeIKiY2UkMjjqwnY-ccsJPerovGbHnbnGL6D8to.jpg" width="50"/>
+            <div>
+             <h2 class="font-bold">
+              Chris Hemsworth
+             </h2>
+             <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur...
+             </p>
+             <p class="text-xs text-gray-300">
+              1 day ago
+             </p>
+            </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-2/3 bg-white">
+        <div
+          class="flex items-center justify-between p-4 border-b border-gray-200 bg-teal-600 text-white"
+        >
+          <h1 class="text-2xl font-bold">CHAT DETAILS</h1>
+          <div class="relative">
+            <button class="text-white font-bold menu-button">
+              Menu <i class="fas fa-caret-down"></i>
+            </button>
+            <div
+              class="dropdown-menu absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg hidden"
+            >
+              <ul class="py-2">
+                <li>
+                  <button
+                    id="new-user"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200 w-full text-left"
+                  >
+                    New User
+                  </button>
+                </li>
+                <li>
+                  <button
+                    id="change-theme"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200 w-full text-left"
+                  >
+                    Change Theme
+                  </button>
+                </li>
+                <li>
+                  <button
+                    id="change-background"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200 w-full text-left"
+                  >
+                    Change Background
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+
+          <div class="flex items-center mb-4">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/XCtwfQ1j71X9d_dIr95ONSkJxFQkKZJfjSmFeibqogM.jpg"
+              alt="Profile picture of John Mayers"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div>
+              <h2 class="text-xl font-bold">John Mayers</h2>
+              <p class="text-sm text-gray-500">Accountant</p>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <div class="bg-gray-100 p-4 rounded-lg mb-2">
+              <p>Hi, how can I help you?</p>
+            </div>
+            <div class="bg-teal-500 text-white p-4 rounded-lg mb-2">
+              <p>
+                Hi guys Ive got the O2 package and have really slow internet...
+              </p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg mb-2">
+              <p>Sure! I will definitely help you with your query...</p>
+            </div>
+            <div class="bg-teal-500 text-white p-4 rounded-lg mb-2">
+              <p>john.mayers@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-center border-t border-gray-200 pt-4">
+            <input
+              type="text"
+              class="flex-1 p-2 border border-gray-300 rounded-lg mr-2"
+              placeholder="Type your message here..."
+            />
+            <button class="bg-teal-500 text-white px-4 py-2 rounded-lg">
+              Send
+            </button>
+          </div>
+          <div class="text-sm text-gray-500 mt-2">
+            <p>Current characters: 0 and current words: 0</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="p-4">
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of John Mayers" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/XCtwfQ1j71X9d_dIr95ONSkJxFQkKZJfjSmFeibqogM.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        John Mayers
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        3 min ago
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of Tony Stark" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/Ev3wWnColR8MPqA-Kjp3pbMMTbArVaBsVZBARfVHN1Y.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        Tony Stark
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        10 min ago
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of S. Johansson" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/UojDg8VIvp57nNW1ds2we_UlHIXTi8fDddSkhU8RM0E.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        S. Johansson
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        3 hours ago
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of Jeremy Renner" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/RC5x9gNMZJdH2YOgVt-EStzHPOtvf-qPOBM1-hGPqvU.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        Jeremy Renner
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        4 hours ago
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of Anthony Mackie" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/WTr0mvk7on75LQouc26NgDByeG6mKyKk3SKfTWjpD7U.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        Anthony Mackie
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        8 hours ago
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of Chris Evans" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/m_w9-v6p-Ltim2jL5LlQMj0X6uV3r4S_0keEdgDmE7o.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        Chris Evans
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        22 hours ago
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of Chris Hemsworth" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/VlMoWeIKiY2UkMjjqwnY-ccsJPerovGbHnbnGL6D8to.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        Chris Hemsworth
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        1 day ago
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of Mark Ruffalo" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/XcQCJPB-j18AcCarLup22vhjMQEBFchDQXdNLZUUpBk.jpg" width="50"/>
-      <div>
-       <h2 class="font-bold">
-        Mark Ruffalo
-       </h2>
-       <p class="text-sm">
-        Lorem, ipsum dolor sit amet consectetur...
-       </p>
-       <p class="text-xs text-gray-300">
-        Dec 10
-       </p>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="w-2/3 bg-white">
-    <div class="flex items-center justify-between p-4 border-b border-gray-200 bg-teal-600 text-white">
-     <h1 class="text-2xl font-bold">
-      CHAT DETAILS
-     </h1>
-     <div class="relative">
-      <button class="text-white font-bold">
-       Menu
-       <i class="fas fa-caret-down">
-       </i>
-      </button>
-     </div>
-    </div>
-    <div class="p-4">
-     <div class="flex items-center mb-4">
-      <img alt="Profile picture of John Mayers" class="w-16 h-16 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/XCtwfQ1j71X9d_dIr95ONSkJxFQkKZJfjSmFeibqogM.jpg" width="50"/>
-      <div>
-       <h2 class="text-xl font-bold">
-        John Mayers
-       </h2>
-       <p class="text-sm text-gray-500">
-        Accountant
-       </p>
-      </div>
-     </div>
-     <div class="mb-4">
-      <div class="bg-gray-100 p-4 rounded-lg mb-2">
-       <p>
-        Hi, how can I help you?
-       </p>
-      </div>
-      <div class="bg-teal-500 text-white p-4 rounded-lg mb-2">
-       <p>
-        Hi guys Ive got the O2 package and have really slow internet. A speed check online said i can get 3mbps but it seems more like 0.5 these days, just freezing and taking ages to open pages and open audio files for example. I have decided to switch to the UPC package which offers 10mbps but do you think i will get it?
-       </p>
-      </div>
-      <div class="bg-gray-100 p-4 rounded-lg mb-2">
-       <p>
-        Sure! I will definitely help you with you query. Could you please confirm your email address
-       </p>
-      </div>
-      <div class="bg-teal-500 text-white p-4 rounded-lg mb-2">
-       <p>
-        john.mayers@gmail.com
-       </p>
-      </div>
-     </div>
-     <div class="flex items-center border-t border-gray-200 pt-4">
-      <input class="flex-1 p-2 border border-gray-300 rounded-lg mr-2" placeholder="Type your message here..." type="text"/>
-      <button class="bg-teal-500 text-white px-4 py-2 rounded-lg">
-       Send
-      </button>
-     </div>
-     <div class="text-sm text-gray-500 mt-2">
-      <p>
-       Current characters: 0 and current words: 0
-      </p>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script src="script.js"></script>
- </body>
+
+    <script>
+      document
+        .querySelector(".menu-button")
+        .addEventListener("click", function () {
+          document.querySelector(".dropdown-menu").classList.toggle("hidden");
+        });
+    </script>
+  </body>
 </html>
